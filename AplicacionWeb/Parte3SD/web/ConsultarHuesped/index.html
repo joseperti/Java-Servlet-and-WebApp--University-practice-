@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Consultar Huesped</title>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/estiloConsultaHuesped.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+	</head>
+	<body>
+		<header>
+			<h1>Realizar Consulta  <img src="../Img/Lupa.png" width="40"></h1>
+		</header>
+        <center>
+                <div class="centrado">
+                    <div class="FormularioNIF">
+                            <h3 class="subrayado">Consultar Huesped por NIF</h3>
+                            <p>Introduce el NIF del huesped que quieres consultar. Ejemplo: 12345678A</p>
+                            <br> 
+                            <center>
+                            <form action="../Servlet_Ap3" method="get">
+                                <b>NIF:</b>
+                                <input type="text" maxlength="9" name="NIF" size="15">
+                                <input type="hidden" name="TipoConsulta" value="NIF">
+                                <br>
+                                <br>
+                                <input type="submit" class="boton" value="Realizar Consulta">
+                            </form>
+                            </center>
+                    </div>
+                    <div class="FormularioNombre">
+                        <h3 class="subrayado">Consultar Huesped por Nombre y Apellidos</h3>
+                            <p>Introduce el Nombre y los Apellidos del huesped que quieres consultar. Ejemplo: Jos&eacute P&eacuterez P&eacuterez</p>
+                            <center>
+                            <form action="../Servlet_Ap3" method="get">
+                                    <table></table>
+                                    <table>
+                                            <tr>
+                                                    <td>	
+                                                            <b>Nombre:</b>
+                                                    </td>
+                                                    <td>
+                                                            <input type="text" maxlength="20" name="Nombre" size="25">
+                                                    </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                    <td>	
+                                                            <b>Apellidos:</b>
+                                                    </td>
+                                                    <td>
+                                                            <input type="text" name="Apellidos" size="25">
+                                                    </td>
+                                                    <td><input type="hidden" name="TipoConsulta" value="NombreYApellidos"></td>
+                                            </tr>
+                                    </table>
+                                    <br>
+                                    <input type="submit" class="boton" value="Realizar Consulta">
+                                    
+                            </form>
+                                <a href="../index.html">Volver a Página Principal</a>
+                            </center>
+                            
+                    </div>
+                </div>
+		
+                </center>
+	</body>
+</html>

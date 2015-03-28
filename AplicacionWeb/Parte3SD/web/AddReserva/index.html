@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>A&ntildedir Reserva</title>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/estiloConsultaHuesped.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+	</head>
+	<body>
+		<header>
+			<h1>Añadir Reserva <img src="../Img/AddReserva.png" width="40"></h1>
+		</header>
+        <center>
+		<div class="FormularioAddReserva centrado">
+			<p>Introduce la fecha de entrada, la fecha de salida y el NIF del cliente para incluir la reserva. <b>Ejemplo:</b> 02/03/2015 y 123455678A</p>
+			<br> 
+                        <center>
+			<form action="../Servlet_Ap3" method="post">
+				<table>
+				<tr>
+                                    <td><b>Fecha de Entrada:</b><td><input type="date" name="FechaEntrada" max="2020-12-31" min="1950-12-31" required></td>
+
+			</tr>
+                        <tr>
+                            <td><b>Fecha de Salida:</b></td><td><input type="date" name="FechaSalida" max="2020-12-31" min="1950-12-31" required></td>
+			</tr>
+			<tr>
+				<td><b>NIF: </b></td><td><input type="text" name="NIF" size="14"  required></td>
+			</tr>
+			<tr>
+				<td><input class="boton" type="hidden" name="TipoConsulta" value="AddReserva"></td>
+			</tr>
+			<tr>
+				
+				<td><input class="boton" type="submit" value="Añadir Reserva"></td>
+			</tr>
+			</table>
+			</form>	
+        </center>
+		</div>
+		<a href="../index.html">Volver A Pagina Principal</a>
+        </center>
+	</body>
+</html>

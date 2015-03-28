@@ -1,0 +1,35 @@
+html{
+background-color: #F2F5A9;
+}
+header{
+	margin-bottom: 10px;
+	color: darkblue;
+}
+.FormularioNIF{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+html h3{
+	margin-top: 20px;
+	color: darkred;
+}
+.FormularioNIF p{
+	margin-top: 2px;
+	margin-bottom: 1px;
+}
+.FormularioNIF input{
+	margin-bottom: 10px;
+}
+
+.FormularioNombre b, input{
+	margin-right: 10px;
+}
+.FormularioNombre p{
+	margin-bottom: 1px;
+}
+.FormularioNombre table{
+	margin-bottom: 10px;
+}
+.FormularioNombre form {
+	margin-bottom: 10px;
+}

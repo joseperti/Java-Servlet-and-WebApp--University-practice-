@@ -1,0 +1,22 @@
+.mensaje_error{
+    width: 100%;
+    text-align: center;
+    background-color: #FF3F3F;
+    box-shadow: 0px 0px 10px white;
+}
+
+html{
+    font-family: Verdana;
+    background-color: #FFABAB;
+}
+
+a{
+    text-decoration: none;
+     color: white;
+    font-weight: bold;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}

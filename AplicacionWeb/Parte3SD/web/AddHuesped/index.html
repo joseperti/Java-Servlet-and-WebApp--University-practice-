@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>A&ntildeadir Nuevo Huesped</title>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../css/AddHuesped.css">
+	</head>
+	<body>
+        <center>
+		<h2><font color="darkblue"><img src="../Img/AddPersona.png" width="25"> Añadir Nuevo Huesped: </font></h2>
+                <div class="centrado">
+		<form action="../Servlet_Ap3" method="post">
+		<table>
+			<tr>
+				<td><b>* Nombre: </b></td><td><input type="text" name="Nombre" size="20" required></td>
+			</tr>
+			<tr>
+				<td><b>* Apellidos: </b></td><td><input type="text" name="Apellidos"  size="20" required></td>
+			</tr>
+			<tr>
+				<td><b>* NIF: </b></td><td><input type="text" name="NIF"  size="20" required></td>
+			</tr>
+			<tr>
+                                <td><b>* Fecha Nacimiento:</b></td><td><input type="date" name="FechaNacimiento" max="2020-12-31" min="1950-12-31" required></td>
+
+			</tr>
+			<tr>
+				<td><b>* Direcci&oacuten: </b></td><td><input type="text" name="Calle" size="20" required></td>
+
+			</tr>
+			<tr>
+				<td><b>* Provincia: </b></td><td><input type="text" name="Provincia" size="20" required></td>
+			</tr>
+			<tr>
+				<td><b>* Localidad: </b></td><td><input type="text" name="Localidad" size="20" required></td>
+			</tr>
+
+			<tr>
+				<td><b>* C&oacutedigo Postal: </b></td><td><input type="number" name="CP" required></td>
+			</tr>
+
+			<tr>
+				<td><b>Fijo: </b></td><td><input type="tel" name="Fijo" size="20"></td>
+			</tr>
+			<tr>
+				<td><b>M&oacutevil: </b></td><td><input type="tel" name="Movil" size="20"></td>
+			</tr>
+			<tr>
+				<td><b>Email: </b></td><td><input type="email" name="Email" size="20"></td>
+			</tr>
+		</table>
+                <input type="hidden" name="TipoConsulta" value="AnadirCliente">
+                <input type="hidden" name="LlevoFechas" value="No">
+		<br>
+		<p><font style="italic">Los campos con asterisco (*) son <b>obligatorios</b>.</font></p>
+		<br>
+		<input class="boton" type="submit" value="Añadir Cliente">
+		</form>
+                </div>
+		<a href="../index.html">Volver a Pagina Principal</a>
+        </center>
+	</body>	
+
+</html>

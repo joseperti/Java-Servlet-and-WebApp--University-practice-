@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>Modificar o Eliminar huesped</title>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/estiloConsultaHuesped.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+	</head>
+	<body>
+		<header>
+			<h1>Realizar Consulta  <img src="../Img/Lupa.png" alt="Imagen de Lupa" width="40"></h1>
+		</header>
+        <center>
+		<div class="FormularioNIF centrado">
+                    <p>Introduce el NIF del huesped que quieres <b>borrar</b> o <b>modificar</b>. Ejemplo: 12345678A</p>
+			<br> 
+                        <center>
+			<form action="../Servlet_Ap3" method="get">
+				<b>NIF:</b>
+				<input type="text" maxlength="9" name="NIF" size="15" required>
+				<input type="hidden" name="TipoConsulta" value="ModElimHuesped">
+				<br>
+				<input  class="boton" type="submit" value="Realizar Consulta">
+			</form>	
+                        </center>
+		</div>
+            <br><br>
+		<a href="../index.html">Volver A Pagina Principal</a>
+        </center>
+	</body>
+</html>
